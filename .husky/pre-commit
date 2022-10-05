@@ -1,0 +1,12 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+npx lint-staged
+
+npx concurrently \
+  --kill-others-on-fail \
+  --prefix "[{name}]" \
+  --names "typecheck,build" \
+   --prefix-colors "bgRed.bold.white,bgGreen.bold.white,bgBlue.bold.white,bgMagenta.bold.white" \
+    "npm run typecheck" \
+    "npm run build" \
