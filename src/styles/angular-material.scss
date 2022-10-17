@@ -1,0 +1,87 @@
+.mat-form-field.mat-form-field-appearance-fill {
+  /* Disabled */
+  &.mat-form-field-disabled {
+    opacity: 0.7 !important;
+  }
+
+  /* Invalid */
+  &.mat-form-field-invalid .mat-form-field-wrapper .mat-form-field-flex {
+    border: 1px solid red;
+  }
+
+  /* Focused */
+  &.mat-focused .mat-form-field-wrapper .mat-form-field-flex {
+    background-color: #fff;
+  }
+
+  /* Focused and valid fields */
+  &.mat-focused:not(.mat-form-field-invalid) .mat-form-field-wrapper .mat-form-field-flex {
+    border: 1px solid orange;
+  }
+
+  /* Disable floating mat-label */
+  &.mat-form-field-has-label.mat-form-field-can-float.mat-form-field-should-float
+    .mat-form-field-label-wrapper
+    .mat-form-field-label {
+    width: 100% !important;
+    transform: none !important;
+  }
+
+  /* Adjustments for mat-label */
+  &.mat-form-field-has-label .mat-form-field-wrapper {
+    margin-top: 24px;
+  }
+
+  /* Default style tweaks and enhancements */
+  &.mat-form-field-wrapper {
+    margin-bottom: 16px;
+    padding-bottom: 0;
+
+    &.mat-form-field-flex {
+      position: relative;
+      display: flex;
+      align-items: stretch;
+      min-height: 48px;
+      border-radius: 6px;
+      padding: 0 16px;
+      background-color: white;
+      border: 1px solid green;
+
+      .mat-form-field-infix {
+        position: static;
+        display: flex;
+        align-items: center;
+        width: 88px;
+        padding: 0;
+        border: 0;
+
+        .mat-input-element {
+          padding: 14px 0;
+          margin-top: 0;
+        }
+
+        .mat-form-field-label-wrapper {
+          top: -25px;
+          height: auto;
+          padding-top: 0;
+          overflow: visible;
+          pointer-events: auto;
+
+          .mat-form-field-label {
+            position: relative;
+            top: 0;
+            margin-top: 0;
+            backface-visibility: hidden;
+            transition: none;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
+    /* Remove the underline */
+    .mat-form-field-underline {
+      display: none;
+    }
+  }
+}
