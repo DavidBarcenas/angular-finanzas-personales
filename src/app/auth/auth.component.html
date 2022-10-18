@@ -1,9 +1,41 @@
-<div class="flex auth">
-  <div class="auth-bg">
-    <img src="../../assets/images/logo.png" alt="Mis Finanzas Personales" width="50" />
-    <h1>Mis Finanzas Personales</h1>
+<div class="flex h-screen w-full auth">
+  <div
+    class="relative hidden md:flex flex-auto items-center justify-center w-1/2 h-full p-16 overflow-hidden bg-primary-700 dark:bg-gray-700 text-white"
+  >
+    <!-- Background -->
+    <svg
+      class="absolute top-0 left-0 w-full h-240 pointer-events-none text-primary-100 dark:text-gray-900"
+      viewBox="0 0 1531 891"
+      preserveAspectRatio="xMidYMax slice"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        class="fill-current opacity-10"
+        d="M0 182c144.327 47.973 534.462 219.712 440.509 369.87C346.555 702.028 79.877 662.846 0 638V182z"
+      ></path>
+      <path
+        class="fill-current opacity-10"
+        d="M1405 848c-424.366 158.009-437-164-437-272s102-425 563-576v769c-21.333 29.333-63.333 55.667-126 79z"
+      ></path>
+      <path
+        class="fill-current opacity-10"
+        d="M1531 162c-122.914-17.284-377.96 33.191-543.433 206.414C822.095 541.636 797.342 648.75 835.842 731.622c38.5 82.871 198.243 134.841 400.555 92.053C1438.71 780.886 1492.752 775.894 1531 768V162z"
+      ></path>
+    </svg>
+    <!-- Content -->
+    <div class="w-full">
+      <div class="text-6xl font-bold leading-tight">
+        <div>Well-crafted,</div>
+        <div>Coded with attention,</div>
+        <div>Build with passion.</div>
+      </div>
+      <div class="mt-3 opacity-70 text-lg">
+        Treo helps developers to build organized and well-coded admin dashboards full of beautiful
+        and feature rich modules.
+      </div>
+    </div>
   </div>
-  <div class="flex-center auth-form">
+  <div class="flex items-center justify-center w-1/2">
     <router-outlet></router-outlet>
   </div>
 </div>
