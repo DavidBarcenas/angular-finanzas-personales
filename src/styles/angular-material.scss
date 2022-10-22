@@ -1,3 +1,7 @@
+/* ----------------------------------------------------------------------------------------------------- */
+
+/*  @ Forms
+/* ----------------------------------------------------------------------------------------------------- */
 .mat-form-field.mat-form-field-appearance-fill {
   /* Disabled */
   &.mat-form-field-disabled {
@@ -83,5 +87,39 @@
     .mat-form-field-underline {
       display: none;
     }
+  }
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+/*  @ Buttons
+/* ----------------------------------------------------------------------------------------------------- */
+.mat-button,
+.mat-flat-button,
+.mat-stroked-button {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  height: 47px;
+  min-height: 47px;
+  max-height: 47px;
+  line-height: 1 !important;
+
+  .mat-button-wrapper {
+    position: relative;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    z-index: 2; /* Move mat-button-wrapper above the ripple and focus overlay */
+  }
+
+  .mat-button-focus-overlay,
+  .mat-button-ripple {
+    z-index: 1;
+  }
+
+  &.mat-primary:not(.mat-button-disabled) {
+    @apply bg-primary #{'!important'};
   }
 }

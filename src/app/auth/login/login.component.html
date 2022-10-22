@@ -1,40 +1,38 @@
 <div class="w-full max-w-80 sm:w-80 mx-auto sm:mx-0">
-  <div class="w-12">
+  <div class="w-20 mb-6 mx-auto">
     <img src="../../../assets/images/logo.png" />
   </div>
-  <h1 class="mt-8 text-4xl font-extrabold tracking-tight leading-tight">Sign in</h1>
-  <div class="flex items-baseline mt-0.5 font-medium">
-    <span>Don't have an account?</span>
-    <a class="ml-1 text-primary hover:underline" [routerLink]="['/sign-up']">Sign up </a>
+  <h1 class="mb-9 text-3xl font-extrabold tracking-tight leading-tight text-center">
+    ¡Bienvenido de nuevo!
+  </h1>
+
+  <button mat-stroked-button class="w-full" type="button">
+    <mat-icon aria-hidden="false" aria-label="Ingresar con Google" fontIcon="home"></mat-icon>
+    <span class="ml-4">Inicia sesión con Google</span>
+  </button>
+
+  <div class="flex items-center my-8">
+    <div class="flex-auto mt-px border-t"></div>
+    <div class="mx-2 text-secondary">O continua con</div>
+    <div class="flex-auto mt-px border-t"></div>
   </div>
+
   <form>
     <mat-form-field class="w-full" appearance="fill">
       <mat-label>Correo electrónico</mat-label>
       <input matInput />
     </mat-form-field>
 
-    <mat-form-field class="w-full" appearance="fill">
+    <mat-form-field class="w-full mb-3" appearance="fill">
       <mat-label>Contraseña</mat-label>
       <input matInput type="password" />
     </mat-form-field>
 
-    <button mat-flat-button [color]="'primary'" class="w-full"><span>Ingresar</span></button>
+    <button mat-flat-button [color]="'primary'" class="w-full"><span>Iniciar sesión</span></button>
   </form>
 
-  <div class="flex items-center">
-    <div class="flex-auto mt-px border-t"></div>
-    <div class="mx-2 text-secondary">Or continue with</div>
-    <div class="flex-auto mt-px border-t"></div>
-  </div>
-
-  <div>
-    <button class="w-full" type="button" mat-stroked-button>
-      Ingresa con Google
-      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
-    </button>
-    <button class="w-full" type="button" mat-stroked-button>
-      Ingresa con Github
-      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
-    </button>
+  <div class="flex items-baseline justify-center mt-8 font-medium mb-8">
+    <span>¿Aún no tienes cuenta?</span>
+    <a class="ml-1 text-primary hover:underline" [routerLink]="['/sign-up']">Crear cuenta</a>
   </div>
 </div>
