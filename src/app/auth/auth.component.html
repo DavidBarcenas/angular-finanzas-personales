@@ -1,4 +1,4 @@
-<div class="flex lg:h-screen w-full flex-wrap">
+<div class="flex lg:h-screen w-full flex-wrap overflow-hidden">
   <div
     class="relative flex flex-auto items-center justify-center w-full lg:w-1/2 h-full p-16 overflow-hidden bg-primary-700 dark:bg-gray-700 text-white"
   >
@@ -34,7 +34,11 @@
       </p>
     </div>
   </div>
-  <div class="flex items-center justify-center w-full lg:w-1/2">
-    <router-outlet></router-outlet>
+  <div
+    class="flex flex-wrap items-center justify-center w-full h-full py-20 overflow-y-scroll lg:w-1/2"
+  >
+    <div>
+      <router-outlet></router-outlet>
+    </div>
   </div>
 </div>
