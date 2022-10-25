@@ -10,8 +10,8 @@ const routes: Routes = [
     component: AuthComponent,
     children: [
       { path: '', redirectTo: 'acceder', pathMatch: 'full' },
-      { path: 'acceder', component: LoginComponent },
-      { path: 'registro', component: RegisterComponent },
+      { path: 'acceder', component: LoginComponent, title: 'Iniciar sesión' },
+      { path: 'registro', component: RegisterComponent, title: 'Crea tu cuenta' },
     ],
   },
 ];
