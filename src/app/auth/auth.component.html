@@ -37,7 +37,24 @@
   <div
     class="flex flex-wrap items-center justify-center w-full h-full py-20 overflow-y-scroll lg:w-1/2"
   >
-    <div>
+    <div class="w-full max-w-80 sm:w-80 mx-auto sm:mx-0">
+      <div class="w-20 mb-6 mx-auto">
+        <img src="../../../assets/images/logo.png" />
+      </div>
+      <h1 class="mb-9 text-3xl font-extrabold tracking-tight leading-tight text-center">
+        {{ title }}
+      </h1>
+
+      <button mat-stroked-button class="w-full" type="button">
+        <img src="../../../assets/images/google.svg" alt="Iniciar sesión con Google" />
+        <span class="ml-3">Continua con Google</span>
+      </button>
+
+      <div class="flex items-center my-8">
+        <div class="flex-auto mt-px border-t"></div>
+        <div class="mx-2 text-secondary">O continua con</div>
+        <div class="flex-auto mt-px border-t"></div>
+      </div>
       <router-outlet></router-outlet>
     </div>
   </div>
