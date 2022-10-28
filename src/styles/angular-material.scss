@@ -10,7 +10,7 @@
 
   /* Invalid */
   &.mat-form-field-invalid .mat-form-field-wrapper .mat-form-field-flex {
-    border: 1px solid red;
+    @apply border-warn;
   }
 
   /* Focused */
@@ -20,7 +20,7 @@
 
   /* Focused and valid fields */
   &.mat-focused:not(.mat-form-field-invalid) .mat-form-field-wrapper .mat-form-field-flex {
-    border: 1px solid orange;
+    @apply border-primary;
   }
 
   /* Disable floating mat-label */
@@ -49,7 +49,8 @@
       border-radius: 6px;
       padding: 0 16px;
       background-color: white;
-      border: 1px solid green;
+      border-width: 1px;
+      @apply border-gray-300 shadow-sm;
 
       .mat-form-field-infix {
         position: static;
@@ -78,6 +79,7 @@
             backface-visibility: hidden;
             transition: none;
             font-weight: 500;
+            color: #1e293b;
           }
         }
       }
