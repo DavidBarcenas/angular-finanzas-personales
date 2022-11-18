@@ -6,7 +6,7 @@ npx lint-staged
 npx concurrently \
   --kill-others-on-fail \
   --prefix "[{name}]" \
-  --names "typecheck,build" \
+  --names "typechecks,build" \
    --prefix-colors "bgRed.bold.white,bgGreen.bold.white,bgBlue.bold.white,bgMagenta.bold.white" \
-    "npm run typecheck" \
+    "npm run typechecks" \
     "npm run build" \
